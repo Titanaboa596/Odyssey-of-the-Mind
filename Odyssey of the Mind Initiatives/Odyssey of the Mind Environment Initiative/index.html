@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include necessary libraries and stylesheets -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-mobile-controls@1.0.0/dist/aframe-mobile-controls.min.js"></script>
+    <!-- Other styles and meta tags as needed -->
+    <script src="./script.js"></script>
+    <script src="./smth.css"></script>
+
+    
+    <!-- Other meta tags and title -->
+    <link rel="stylesheet" type="text/css" href="smth.css">
+    <!-- The 'href' attribute should be the path to your CSS file -->
+
+
+</head>
+<body>
+    <a-scene background="color: #000000">
+        <!-- Camera with mobile controls -->
+        <a-camera wasd-controls-enabled="true" twoway-motion tilt-turn position="0 0 15"></a-camera>
+        <!-- Other entities (sky, text, etc.) -->
+ 
+        <a-scene>
+         <a-assets>
+           <video id="sky-video" src="test1.mp4" autoplay loop="true"></video>
+         </a-assets>
+         <a-sky src="#sky-video"></a-sky>
+       </a-scene>
+       
+        
+
+
+   
+   
+      </a-entity>
+   </a-entity>
+     <!--Text-->
+     <a-entity
+     position="0 9 0"
+     text="font: exo2bold; align: center; width: 40; color: green; value: Odyssey of the Mind Team's Environmental Initiative"
+     animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20000"></a-entity>
+     
+     <a-entity
+        position="0 10 -10"
+     text="font: exo2bold; align: center; width: 25; color: black; value: Our Team's Goal">
+     </a-entity>
+     
+     <a-entity
+        position="0 -5 -10"
+     text="font: exo2bold; align: center; width: 20; color: white; value: Our team, participating in the Odyssey of the Mind1 competition, is deeply committed to environmental conservation. We believe in the power of creativity and problem-solving to address the pressing environmental issues of our time1.
+
+     In our skit, we've incorporated themes that highlight the importance of preserving our natural world. We've drawn inspiration from various scientific fields such as earth science, space, chemistry, and physics. One of our skits, for instance, revolves around the theme of pollution and presents an original solution to reduce it.
+     
+     We want to take these themes a step further. Our goal is not just to raise awareness but to inspire action. We believe that every individual has a role to play in saving our environment.">
+     </a-entity>
+     
+     <a-entity
+        position="20 10 12"
+     text="font: exo2bold; align: center; width: 30; color: black; value: Arbor Day Foundation"
+     rotation="0 -90 0">
+   </a-entity>
+     
+     <a-entity
+        position="20 2 12"
+     text="font: exo2bold; align: center; width: 20; color: white; value:  The Arbor Day Foundation is a global nonprofit organization that inspires people to plant, nurture, and celebrate trees. They are scaling their efforts to plant 500 million trees by 2027 in areas most needed. They work with a strong network of global partners and use a science-based approach to make it happen. They also provide detailed information about nearly 200 different tree species 
+     "
+     rotation="0 -90 0">
+     </a-entity>
+     
+     
+     <a-entity
+        position="-20 10 12"
+     text="font: exo2bold; align: center; width: 25; color: black; value: One Tree Planted"
+     rotation="0 90 0">
+     </a-entity>
+     
+     <a-entity
+        position="-20 2 12"
+     text="font: exo2bold; align: center; width: 20; color: white; value: One Tree Planted is a non-profit organization focused on global reforestation. They make it simple for anyone to plant trees. They work with reforestation partners worldwide that need support to help get trees in the ground. They operate in eight project countries and manage over 241,150 hectares of land by working with local communities 
+     "
+     rotation="0 90 0">
+     </a-entity>
+     
+     
+     <a-entity
+        position="0 10 40"
+     text="font: exo2bold; align: center; width: 25; color: black; value: Eden Reforestation Project"
+     rotation="0 180 0">
+     </a-entity>
+     
+     <a-entity
+        position="0 2 40"
+     text="font: exo2bold; align: center; width: 20; color: white; value: Working with local communities to restore landscapes on a massive scale, creating jobs, protecting ecosystems, and helping mitigate climate change. They manage over 241,150 hectares of land by working with local communities in some of the world’s most remote locations. They provide economic incentives and simple planting techniques to support local communities in restoring their local environment and economy
+     "
+     rotation="0 180 0">
+     </a-entity>
+     
+     
+             <!-- Sky 
+             <a-sky src="https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvia_lactea.png?v=1604296331712"></a-sky>-->
+     
+    </a-scene>
+    <!-- WASD Buttons -->
+    <div id="wasd-controls">
+        <button class="button" id="btnW">W</button>
+        <button class="button" id="btnA">A</button>
+        <button class="button" id="btnS">S</button>
+        <button class="button" id="btnD">D</button>
+    </div>
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
